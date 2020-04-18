@@ -1,0 +1,34 @@
+{
+  "name": "arc-aframe-hand-camera",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "A-Frame components that streams the camera feed to a video texture. Used to show the users hands when they hold a remote control.",
+  "repository": "https://github.com/arcs-vr/arc-vue-template",
+  "author": "Barthy Bonhomme <post@barthy.koeln>",
+  "private": false,
+  "keywords": [
+    "aframe",
+    "aframe-controls",
+    "ARCS",
+    "MQTT",
+    "proxy",
+    "remote",
+    "socket",
+    "VR",
+    "WebXR",
+    "WebVR",
+    "websocket",
+    "WebRTC"
+  ],
+  "main": "index.js",
+  "desktop": "index.js",
+  "devDependencies": {
+    "core-js": "^3",
+    "regenerator-runtime": "^0.13.5",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  }
+}
