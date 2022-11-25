@@ -138,7 +138,11 @@ export const ArcHandCamera = {
    * Start streaming Video
    */
   async arcRemoteConnected () {
-    if (!this.video.srcObject) {
+    if (this.video.srcObject) {
+      return
+    }
+
+    try {
       this.video.srcObject = await navigator.mediaDevices.getUserMedia({
         video: {
           width: 1024,
@@ -150,6 +154,8 @@ export const ArcHandCamera = {
 
       this.el.appendChild(this.video)
       this.el.setAttribute('src', `#${this.data.id}`)
+    } catch (error) {
+      console.info('hand camera not started because: ', error)
     }
   },
 
